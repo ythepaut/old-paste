@@ -1,0 +1,19 @@
+ErrorDocument 404 https://paste.ythepaut.com/#404
+ErrorDocument 403 https://paste.ythepaut.com/#403
+ErrorDocument 401 https://paste.ythepaut.com/#401
+
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^paste.ythepaut\.fr [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://paste.ythepaut.fr/$1 [R,L]
+
+
+RewriteCond %{HTTP_HOST} ^paste.ythepaut\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://paste.ythepaut.com/$1 [R,L]
+
+
+RewriteRule ^([0-z]{8})$ index.php?uid=$1
+RewriteRule ^raw/([0-z]{8})$ raw/raw.php?uid=$1
+
+Options -Indexes

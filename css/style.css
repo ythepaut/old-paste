@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #1e272e;
+    padding: 20px 0px 20px 50px;
+    margin: 0;
+    height: 100%;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: +1000;
+    background-color: #242e37;
+    color: #fff;
+}
+
+.logo {
+    padding: 5px;
+    background-color: #242e37;
+}
+.logo img {
+    width: 200px;
+}
+
+hr {
+    border: solid 1px #444;
+}
+
+.buttons {
+    display: flex;
+    padding: 5px;
+}
+
+button {
+    border-width: 0;
+    background-color: #242e37;
+    color: #95a5a6;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease .3s;
+}
+button:hover {
+    color: #fff;
+}
+
+button[disabled] {
+    color: #7f8c8d;
+    cursor: not-allowed;
+}
+
+
+#lignes {
+    color: #95a5a6;
+    z-index: -1000;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 30px;
+    font-size: 13px;
+    font-family: monospace;
+    text-align: right;
+}
+
+textarea {
+    display: inline-block;
+    background: 0 0;
+    border: 0;
+    color: #fff;
+    background-color: #1e272e;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    font-size: 13px;
+}
+
+code {
+    display: inline-block !important;
+    background: 0 0 !important;
+    border: 0 !important;
+    color: #dff9fb !important;
+    background-color: #1e272e !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 13px !important;
+}
